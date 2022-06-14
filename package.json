@@ -1,0 +1,16 @@
+{
+  "name": "calculator-app1",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "debbie",
+  "license": "ISC",
+  "devDependencies": {
+    "@cucumber/cucumber": "^8.3.0",
+    "chai": "^4.3.6",
+    "mocha": "^10.0.0"
+  }
+}
