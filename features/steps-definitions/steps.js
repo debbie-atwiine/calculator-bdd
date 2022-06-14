@@ -47,46 +47,46 @@ Then('The result should be {int} on the screen', function (result) {
 );
 
 
-// //Subtracting
+//Subtracting
  Given('I have entered {int} into the calculator to subtract', function (int1) {
     console.log(int1);   
 }
 );
 
-    Given('I have also entered second {int} into the calculator', function (int2) {
-        console.log(int2);   
-    }
-    );
+Given('I have also entered second {int} into the calculator', function (int2) {
+    console.log(int2);   
+}
+);
 
-    When('I press {int} - {int} on the calculator', function (int2, int1) {
-        difference = int2 - int1;
-    }
-    );
+When('I press {int} - {int} on the calculator', function (int2, int1) {
+    difference = int2 - int1;
+}
+);
 
-    Then('The result should be {int} on the screen after subtracting', function (result) {
-        expect(difference).to.equal(result);
-    }
-    );
+Then('The result should be {int} on the screen after subtracting', function (result) {
+    expect(difference).to.equal(result);
+}
+);
 
 
-    // division
-    Given('I have entered {int} into the calculator to get average', function (int1) {
-        console.log(int1);    
-    }
-    );
+// division
+Given('I have entered {int} into the calculator to get average', function (int1) {
+    console.log(int1);    
+}
+);
 
-        Given('I have also entered {int} into the calculator to divide', function (int2) {
-            console.log(int2);    
-        }
-        );
+Given('I have also entered {int} into the calculator to divide', function (int2) {
+    console.log(int2);    
+}
+);
 
-        When('I press {int} divide {int} on the calculator', function (int1, int2) {
-            quotient = int1 / int2;
-        }
-        );
+When('I press {int} divide {int} on the calculator', function (int1, int2) {
+    quotient = int1 / int2;
+}
+);
 
-        Then('The result should be {int} on the screen after dividing', function (result) {
-            expect(quotient).to.equal(result);
-        }
-        );
+Then('The result should be {int} on the screen after dividing', function (result) {
+    expect(quotient).to.equal(result);
+}
+);
 
